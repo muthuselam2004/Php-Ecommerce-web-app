@@ -1,0 +1,84 @@
+
+:root {
+    --bg-color: #f4f6fa;
+    --text-color: #1a1a1a;
+    --card-bg: #ffffff;
+    --navbar-bg: #0d6efd;
+    --button-bg: #ffffff;
+    --button-text: #0d6efd;
+    --border-color: #d4d4d4;
+
+    --accent-green: #0bd86f;
+    --accent-red: #ff5252;
+    --accent-blue: #1e90ff;
+}
+
+
+.dark-mode {
+    --bg-color: #0e1726;
+    --text-color: #e8eef9;
+    --card-bg: #1b263b;
+    --navbar-bg: #1b263b;
+    --button-bg: #263447;
+    --button-text: #ffffff;
+    --border-color: #3d4a61;
+
+    --accent-green: #19ff8c;
+    --accent-red: #ff7070;
+    --accent-blue: #4ea3ff;
+}
+
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s ease;
+}
+
+.navbar {
+    background: var(--navbar-bg);
+    color: var(--text-color);
+    transition: 0.3s ease;
+}
+
+.card {
+    background: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    transition: 0.3s ease;
+}
+
+
+h1, h2, h3, h4, h5, h6, 
+p, span, label, div, a {
+    color: var(--text-color);
+}
+
+
+#mode-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+    background: var(--button-bg);
+    color: var(--button-text);
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+
+.sell {
+    color: var(--accent-green);
+}
+
+.orig {
+    color: var(--accent-red);
+}
+
+.badge {
+    background: var(--accent-red);
+    color: white;
+}
